@@ -1,0 +1,24 @@
+<?php
+// Define professions and their corresponding post titles and contents
+$professions = array(
+    "Doctor" => array(
+        "title" => "The Importance of Regular Health Checkups",
+        "content" => "Regular health checkups are essential for maintaining good health, especially for those who are at risk of developing certain conditions. As a doctor, I strongly recommend that everyone should schedule regular checkups with their healthcare provider."
+    ),
+    "Engineer" => array(
+        "title" => "How to Build a Strong Foundation for Your Next Project",
+        "content" => "As an engineer, I know how important it is to build a strong foundation for any project. In this post, I will share some tips and best practices for building a solid foundation that can withstand the test of time."
+    ),
+    "Teacher" => array(
+        "title" => "The Benefits of Using Technology in the Classroom",
+        "content" => "As a teacher, I have seen firsthand the benefits of using technology in the classroom. In this post, I will discuss some of the ways that technology can enhance the learning experience for students and make teaching more effective."
+    )
+);
+
+// Generate posts based on professions
+foreach ($professions as $profession => $post) {
+    echo "<h2>{$profession}</h2>";
+    echo "<h3>{$post['title']}</h3>";
+    echo "<p>{$post['content']}</p>";
+}
+?>
